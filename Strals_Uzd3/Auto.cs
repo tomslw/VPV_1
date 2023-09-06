@@ -29,5 +29,20 @@ namespace Strals_Uzd3
         {
             Console.WriteLine("Marka: " + marka + " Modelis: " + modelis + " Jauda: " + jauda + " Tiplums: " + tilpums);
         }
+
+        public double JaudaHP()
+        {
+            return jauda * 1.36;
+        }
+
+        public double VidPaterins()
+        {
+            return Math.Sqrt(tilpums) * 6.7/100;
+        }
+
+        public double BremzeshanasCelsh(double atrums)
+        {
+            return (atrums * atrums) / (2 * 9.81 * 0.75);
+        }
     }
 }
